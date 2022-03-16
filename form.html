@@ -4,35 +4,35 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" media="screen" type="text/css" href="style.css" />
+        <link rel="stylesheet" media="screen" type="text/css"
+            href="css/formStyle.css">
         <title>The Masque</title>
     </head>
     <body>
-        <p class="messageRecycle">Bonjour les amis du masque ! Utilisez le formulaire ci-dessous pour
-            nous partager vos bonens idées. Récyclage, réutilisation,
-            amélioration ... tout ce que vous savez et voulez faire avec vos
-            masques usagés ou bien les surstock que vous avez accumulé.
+        <p class="messageRecycle">A vos idées !
         </p>
-        <form>
+        <form id="myForm" class="container">
             <div>
                 <label for="name">Nom :</label>
-                <input type="text" id="name" name="user_name">
+                <input type="text" id="name" name="user_name" value="" required>
             </div>
             <div>
-                <label for="firstName"> Prénom:</label>
-                <input type="text" id="firstname" name="user_name">
+                <label for="firstName"> Prénom :</label>
+                <input type="text" id="firstname" name="user_name" value=""
+                    required>
             </div>
             <div>
-                <label for="mail">adresse e-mail :</label>
-                <input type="email" id="mail" name="user_mail">
+                <label for="mail">Adresse e-mail :</label>
+                <input type="email" id="mail" name="user_mail" value=""
+                    required>
             </div>
             <div>
-                <label for="msg"> Votre Message</label>
-                <textarea id="msg" name="user_message"></textarea>
-                <button type="submit">Send message:</button>
+                <label for="msg"> Votre Message :</label>
+                <textarea id="msg" name="user_message" value="" required></textarea>
+                <button class = "buttonSub" type="submit">Envoyer</button>
             </div>
             <div>
-                <label for="avatar">Partagez vos photos !</label>
+                <label for="photos">Partagez vos photos !</label>
                 <input type="file"
                     id="idea" name="idea"
                     accept="image/png, image/jpeg">
@@ -40,6 +40,7 @@
 
         </form>
 
-
+        <script
+            src="src/form.js"></script>
     </body>
 </html>
