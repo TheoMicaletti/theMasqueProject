@@ -1,6 +1,5 @@
-const message = "Thanks for your message";
+const message = "Merci pour votre idée !";
 
-document.getElementById("myForm").addEventListener("submit", function (event) {
-  event.preventDefault();
+document.getElementById("myForm").addEventListener("submit", function () {
   alert(message);
 });

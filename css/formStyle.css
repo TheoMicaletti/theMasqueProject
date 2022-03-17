@@ -46,10 +46,13 @@ div {
 }
 
 button {
-background-color: grey;
-border-radius: 10px;
-padding: 10px;
-margin: 10px;
+    display: flex;
+    background-color: grey;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px auto;
+ 
+    
 }
 
 input {
@@ -73,9 +76,10 @@ label{
 }
 
 button:hover {
-    background-color: rgb(35, 228, 196);
+    background-color: rgb(199, 199, 199);
 }
 
 #idea {
     background-color: rgb(13, 134, 124);
 }
+
